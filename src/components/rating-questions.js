@@ -5,11 +5,11 @@ import PropTypes from "prop-types";
 function RatingQuestion({ questionText, questionId }) {
   return (
     <div class="p-4 rounded overflow-hidden shadow-lg">
-      <div class="flex h-12">
+      <div class="flex pb-2">
         <span class="text-gray-700">{questionText}</span>
       </div>
-      <div class="flex md:w h-12">
-        <label class="inline-flex items-center">
+      <div class="flex flex-wrap md:w">
+        <label class="inline-flex items-center mr-6">
           <input
             type="radio"
             class="form-radio"
@@ -19,7 +19,7 @@ function RatingQuestion({ questionText, questionId }) {
           ></input>
           <span class="ml-2">Strongly Disagree</span>
         </label>
-        <label class="inline-flex items-center ml-6">
+        <label class="inline-flex items-center mr-6">
           <input
             type="radio"
             class="form-radio"
@@ -29,7 +29,7 @@ function RatingQuestion({ questionText, questionId }) {
           ></input>
           <span class="ml-2">Disagree</span>
         </label>
-        <label class="inline-flex items-center ml-6">
+        <label class="inline-flex items-center mr-6">
           <input
             type="radio"
             class="form-radio"
@@ -39,7 +39,7 @@ function RatingQuestion({ questionText, questionId }) {
           ></input>
           <span class="ml-2">Neutral</span>
         </label>
-        <label class="inline-flex items-center ml-6">
+        <label class="inline-flex items-center mr-6">
           <input
             type="radio"
             class="form-radio"
@@ -49,7 +49,7 @@ function RatingQuestion({ questionText, questionId }) {
           ></input>
           <span class="ml-2">Agree</span>
         </label>
-        <label class="inline-flex items-center ml-6">
+        <label class="inline-flex items-center">
           <input
             type="radio"
             class="form-radio"
