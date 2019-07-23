@@ -1,0 +1,26 @@
+import React from "react";
+
+import PropTypes from "prop-types";
+
+function CommentQuestion({ questionText, questionId }) {
+  return (
+    <div class="p-4 rounded overflow-hidden shadow-lg">
+      <label class="block">
+        <span class="text-gray-700">{questionText}</span>
+        <textarea
+          class="form-textarea mt-1 block w-full bg-gray-200"
+          rows="3"
+          name={questionId}
+          placeholder="Enter your comments here..."
+        ></textarea>
+      </label>
+    </div>
+  );
+}
+
+CommentQuestion.propTypes = {
+  questionText: PropTypes.string,
+  questionId: PropTypes.string
+};
+
+export default CommentQuestion;
