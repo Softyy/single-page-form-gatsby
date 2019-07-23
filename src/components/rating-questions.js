@@ -15,6 +15,7 @@ function RatingQuestion({ questionText, questionId }) {
             class="form-radio"
             name={questionId}
             value="1"
+            required
           ></input>
           <span class="ml-2">Strongly Disagree</span>
         </label>
@@ -24,6 +25,7 @@ function RatingQuestion({ questionText, questionId }) {
             class="form-radio"
             name={questionId}
             value="2"
+            required
           ></input>
           <span class="ml-2">Disagree</span>
         </label>
@@ -33,6 +35,7 @@ function RatingQuestion({ questionText, questionId }) {
             class="form-radio"
             name={questionId}
             value="3"
+            required
           ></input>
           <span class="ml-2">Neutral</span>
         </label>
@@ -42,6 +45,7 @@ function RatingQuestion({ questionText, questionId }) {
             class="form-radio"
             name={questionId}
             value="4"
+            required
           ></input>
           <span class="ml-2">Agree</span>
         </label>
@@ -51,6 +55,7 @@ function RatingQuestion({ questionText, questionId }) {
             class="form-radio"
             name={questionId}
             value="5"
+            required
           ></input>
           <span class="ml-2">Strongly Agree</span>
         </label>

@@ -2,7 +2,7 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
-function CommentQuestion({ questionText, questionId }) {
+function CommentQuestion({ questionText, questionId, required }) {
   return (
     <div class="p-4 rounded overflow-hidden shadow-lg">
       <label class="block">
@@ -12,6 +12,8 @@ function CommentQuestion({ questionText, questionId }) {
           rows="3"
           name={questionId}
           placeholder="Enter your comments here..."
+          required={required}
+          minlength="20"
         ></textarea>
       </label>
     </div>
@@ -20,7 +22,12 @@ function CommentQuestion({ questionText, questionId }) {
 
 CommentQuestion.propTypes = {
   questionText: PropTypes.string,
-  questionId: PropTypes.string
+  questionId: PropTypes.string,
+  required: PropTypes.string
+};
+
+CommentQuestion.defaultProps = {
+  required: false
 };
 
 export default CommentQuestion;

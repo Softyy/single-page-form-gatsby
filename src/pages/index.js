@@ -130,7 +130,11 @@ function IndexPage() {
           <div class="p-4 rounded overflow-hidden shadow-lg">
             <label class="block">
               <span class="text-gray-700">Course Name</span>
-              <select class="form-select block w-full mt-1 bg-gray-100 p-2">
+              <select
+                class="form-select block w-full mt-1 bg-gray-100 p-2"
+                name="course"
+                id="course"
+              >
                 {courses.map(c => (
                   <option value={c.id}>{c.text}</option>
                 ))}
@@ -174,7 +178,11 @@ function IndexPage() {
             Section 4: What can we improve / What did we do well?
           </h2>
           {questions4.map(q => (
-            <CommentQuestion questionText={q.text} questionId={q.id} />
+            <CommentQuestion
+              questionText={q.text}
+              questionId={q.id}
+              required={true}
+            />
           ))}
           <button className="border-b-4 border-gray-800 hover:border-gray-700 bg-gray-700 hover:bg-gray-600 font-bold px-4 py-2 rounded text-sm text-white mt-2">
             Submit
