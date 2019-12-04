@@ -14,6 +14,10 @@ const courses = [
     id: "analytics"
   },
   {
+    text: "Hadoop Essentials",
+    id: "hadoop"
+  },
+  {
     text: "Python Dashboards",
     id: "dashboards"
   },
